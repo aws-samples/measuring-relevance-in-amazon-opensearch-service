@@ -1,17 +1,24 @@
-## My Project
+# Measuring relevance in Amazon OpenSearch Service
 
-TODO: Fill this README out!
+This repository is an accompaniment to the blog post "Measuring relevance in Amazon OpenSearch Service" published on the AWS Big Data Blog. 
 
-Be sure to:
+## Architecture diagram
 
-* Change the title in this README
-* Edit your repository description on GitHub
 
-## Security
+![MeasuringRelevanceArchitectureDiagram.png](MeasuringRelevanceArchitectureDiagram.png)
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+## Deployment
 
-## License
+- Deploy the Cloudformation template "" in eu-east-1 (N.Virginia)
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+- Open the SageMaker Notebook "MeasuringRelevanceNotebook". 
 
+- Open the measureRelevance.ipynb and follow the steps as you progress through the blog post. 
+
+## Cleanup
+
+- Delete the two CloudFormation stack "MeasureRelevanceStack" though the console or CLI.
+
+```bash
+aws cloudformation delete-stack --stack-name MeasureRelevanceStack
+```
